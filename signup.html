@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rocket League Analysis</title>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-container">
+                <img class="logo" src="assets/logo.png" alt="logo">
+
+                <nav>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="sign-up" href="signup.html">Sign Up</a></li>
+                    <li><a href="match-results.html">Results</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="#">More</a></li>
+                </nav>
+            </div>
+        </header>
+
+
+    <div class="container flex-container">
+        <form action="/form-handling-url" method="post">
+            <div class="form-item textspace">
+                <label for="firstName">First name</label>
+                <input class="parts" type="text" id="firstName" name="first_name">
+            </div>
+
+            <div class="textspace">
+                <label for="lastName">Last name</label>
+                <input class="parts" type="text" id="lastName" name="last_name">
+            </div>
+
+            <div class="textspace">
+                <label for="email">Email</label>
+                <input class="parts" type="email" id="email" name="email_address">
+            </div>
+
+            <div class="row-item status-date">
+                <label for="role">Status:</label>
+                <select id="role" name="user_role_name">
+                    <option id="drop-down" value="student">User</option>
+                    <option id="drop-down" value="instructor">Admin</option>
+                </select>
+            </div>
+
+            <div class="textspace">
+                <label for="comments">Comments</label>
+                <textarea class="parts" id="comments" name="comments"></textarea>
+            </div>
+
+            <div class="row-item">
+                <input type="checkbox" id="signup" name="signup" value="Signup">
+                <label for="signup">Sign up for news letter</label><br>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label for="terms"> Agree to terms and conditions</label>
+            </div>
+
+            <div class="row-item">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
